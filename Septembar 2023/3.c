@@ -49,7 +49,6 @@ int main() {
     root->left->right = createNode(5);
     root->right->left = createNode(6);
     root->right->right = createNode(7);
-
     printf("Ispisivanje elemenata sa određenog nivoa stabla:\n");
     int level = 2; // Nivo koji želimo ispisati
     printLevelOrder(root, level);
