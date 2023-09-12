@@ -1,3 +1,11 @@
+/*
+1. (15 poena)
+U programskom jeziku C napisati program u kom se pomoću odgovarajucih fukncija vrsi inicijalizacija,dodavanje elemenata u dvostruko ulančanu listu i njihov prikaz.
+Elementi su tipa int.
+Kreirtati funkciju za inverziju dvostruko ulančane liste.
+Demonstirati rad programa.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 

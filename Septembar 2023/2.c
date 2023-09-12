@@ -1,3 +1,9 @@
+/*
+2. (20 poena)
+Napisati program u jeziku C za predstavljanje reda koriscenjem dva steka.
+U glavnom programu demonstirati rad funkcija
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
