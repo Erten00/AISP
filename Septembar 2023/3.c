@@ -1,3 +1,10 @@
+/*
+3. (15 poena)
+U programskom jeziku C napisati program koji radi sa binarnim stablom.
+Implamentirati za ispisivanje elemenata sa zadatog nivoa.
+Demonstirati rad programa u glavnoj funkciji.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
