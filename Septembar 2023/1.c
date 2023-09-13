@@ -63,7 +63,6 @@ void reverseList(struct Node** head) {
         prev = current;
         current = next;
     }
-
     *head = prev;
 }
 
