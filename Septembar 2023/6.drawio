@@ -5,7 +5,7 @@
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="3" value="&lt;h3&gt;Neka je dat neusmereni graf G na slici ispod. Koliko čvorova i grana ima graf G?&lt;br&gt;Navesti sve proste puteve od S do E. Navesti sve susede čvora B.&lt;br&gt;&amp;nbsp;Predstaviti graf G pomoću matrice susedstva. Demonstrirati pretraživanje u dubinu i u širinu za graf (od S do G)&lt;/h3&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="165" width="770" height="90" as="geometry"/>
+                    <mxGeometry x="165" y="1" width="770" height="90" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
