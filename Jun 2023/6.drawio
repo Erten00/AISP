@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="NaFznILHvg57-2ARZ83y" name="Page-1">
-        <mxGraphModel dx="1624" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+        <mxGraphModel dx="1454" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="&lt;h3&gt;Konvertovati izraz A*(B+C*D)+E iz infiksne u postfiksnu notaciju. Objasniti postupak konverzije&lt;/h3&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-                    <mxGeometry x="211" y="2" width="660" height="60" as="geometry"/>
+                <mxCell id="2" value="&lt;h3&gt;Prikazati postupak sortiranja niya 3, 5, 8, 6, 2, 7 korišćenjem merge. qucik i shell sorta sa intervalom 3&lt;/h3&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="191" y="2" width="700" height="60" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
