@@ -57,10 +57,10 @@ void enqueue(struct Stack* stack1, struct Stack* stack2, int item) {
     while (!isEmpty(stack1)) {
         push(stack2, pop(stack1));
     }
-    
+
     // Dodati novi element u stack1
     push(stack1, item);
-    
+
     // Premestiti sve elemente iz stack2 nazad u stack1
     while (!isEmpty(stack2)) {
         push(stack1, pop(stack2));
