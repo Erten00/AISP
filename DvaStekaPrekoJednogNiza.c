@@ -73,4 +73,56 @@ int pop(int stno){
     }
 }
 
-//
+// Display
+
+display(){                  /* Function to display status of Stack */
+    int i;
+    if(Sempty()){
+        printf(" \n Empty Stack\n");
+    }
+    else{
+        for(i=0;i<=top;i++){
+            printf("%d\n",s[i]);
+        }
+        printf("^Top");
+    }
+}
+
+// main
+
+main(){
+    int opn,elem;
+    do{
+        clrscr();
+        printf("\n ### Stack Operations ### \n\n");
+        printf("\n Press 1-Push, 2-Pop,3-Display,4-Exit\n");
+        printf("\n Your option ? ");
+        scanf("%d",&opn);
+        switch(opn){
+            case 1: 
+                printf("\n\nRead the element to be pushed ?");
+                scanf("%d",&elem);
+                push(elem); 
+                break;
+            case 2:
+                elem=pop();
+                if( elem != -1){
+                    printf("\n\nPopped Element is %d \n",elem);
+                    break;
+                }
+            case 3:
+                printf("\n\nStatus of Stack\n\n");
+                display(); 
+                break;
+            case 4: 
+                printf("\n\n Terminating \n\n"); 
+                break;
+            default: 
+                printf("\n\nInvalid Option !!! Try Again !! \n\n");
+                break;
+        }
+        printf("\n\n\n\n  Press a Key to Continue . . . ");
+        getch();
+    }
+    while(opn != 4);
+}
