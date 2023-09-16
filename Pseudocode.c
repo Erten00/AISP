@@ -31,4 +31,14 @@ void crate(int elem){
     }
 }
 
-//
+// Dodavanje elementa posle zadatog elementa
+
+void insert_after(NODE *pom,int elem){
+    temp=(struct node*)malloc(sizeof(struct node));
+    temp->data = elem;
+    temp->next = pom->next;
+    pom->next = temp;
+    if (pom==last){
+        last=temp;
+    } 
+}
