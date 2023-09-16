@@ -103,5 +103,8 @@ void delete_on_position(int pos){
 // Brisanje elementa na zadatoj vrednosti
 
 void delete_by_value(int value){
-    
+    NODE *p, *q;
+    p=first;
+    q=NULL;
+    while
 }
