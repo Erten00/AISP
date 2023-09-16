@@ -1,3 +1,6 @@
+#include<stdio.h>
+#include<stdlib.h>
+
 // Jednostruke povezane liste
 
 typedef struct node{
@@ -183,9 +186,6 @@ NODE *concat(NODE *list1,NODE *list2){
 
 // Dvostruko povezana lista
 //       Struktura elementa
-
-#include<stdio.h>
-#include<stdlib.h>
 
 struct Node {
     int data;
