@@ -274,6 +274,7 @@ typedef struct NODE{
     int info;
     struct NODE *next;
 } NODE;
+
 NODE *front=NULL,*rear=NULL,*temp;
 
 // Kreiranje elementa
