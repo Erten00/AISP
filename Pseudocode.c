@@ -99,3 +99,9 @@ void delete_on_position(int pos){
     }
     delete_after(q);
 }
+
+// Brisanje elementa na zadatoj vrednosti
+
+void delete_by_value(int value){
+    
+}
