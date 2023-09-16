@@ -134,3 +134,55 @@ int Pop(){
     }
 }
 
+// Prikaz (štampanje) elemenata
+
+void Display(){
+    NODE *t;
+    if( top == NULL){
+        printf("Empty Stack\n");
+    }
+    else{
+        t=top;
+        printf("Top->");
+    }
+    while(t){
+    printf("[%d]->",t->data);
+    t=t->link;
+    }
+}
+
+// Dva steka preko jednog niza
+
+// StackFull
+
+#define SIZE 10/* Size of Stack */
+
+int s[SIZE],top[3]={0,-1,SIZE};
+
+int Sfull(){ /*Function to Check Stack Full */
+    if(top[1] == top[2]-1){
+        return 1;
+    }
+    return 0;
+}
+
+// StackEmpty
+
+int Sempty(stno){ /* Function to Check Stack Empty */
+    switch(stno){
+        case 1: 
+            if(top[1] == -1){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        case 2:
+            if(top[2] == SIZE){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+        }
+}
