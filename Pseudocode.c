@@ -106,5 +106,16 @@ void delete_by_value(int value){
     NODE *p, *q;
     p=first;
     q=NULL;
-    while
+    while(p!=NULL){
+        if(value==p->data){
+            brake;
+        }
+        else{
+            q=p;
+            p=p->next;
+        }
+        if((p==first)&(first==last)){
+            first
+        }
+    }
 }
