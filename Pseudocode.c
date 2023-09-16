@@ -115,7 +115,153 @@ void delete_by_value(int value){
             p=p->next;
         }
         if((p==first)&(first==last)){
-            first
+            first=last=NULL;
+            free(p);
+            printf("Lista je sada prazna");
+        }
+        else if(p==last){
+            q->next=NULL;
+            free(p);
+            last=q;
+        }
+        else{
+            q->next=p->next;
+            free(p);
         }
     }
+}
+
+// Prikaz elementa
+
+void display(){
+    temp=first;
+    prinf("First->")
+    while (temp!=NULL){
+        //printf("%d %d" --> ",temp->data,temp->next");
+        printf("%d", temp->data);
+        temp=temp->next;
+    }
+    printf("NULL")
+}
+
+// Invertovanje liste
+
+NODE *invertuj(NODE *first){
+    NODE *p,*q,*r;
+    p=first;
+    q-NULL;
+    while (p!=NULL){
+     r=q;
+     q=p;
+     p=p->next;
+     q->next=r; 
+    }
+    first=q;
+    return first;
+}
+
+// Konkatenacija dve liste
+
+NODE *concat(NODE *list1,NODE *list2){
+    NODE *p;
+    if (list1==NULL)
+    {
+        return list2;
+    }
+    else if (list2==NULL)
+    {
+        return list1;
+    }
+    p=list1;
+    while (p->next!=NULL)
+    {
+        p=p->next
+    }
+    p->next=list2;
+    return list1;
+}
+
+// Dvostruko povezana lista
+//       Struktura elementa
+
+#include<stdio.h>
+#include<stdlib.h>
+
+struct Node {
+    int data;
+    struct Node* next;
+    struct Node* prev;
+};
+    struct Node* head; //pok. na 1. elem.
+
+// Kreiranje novog elementa
+
+struct Node* GetNewNode(int x) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+    newNode->data = x;
+    newNode->prev = NULL;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Dodavanje elementa na početku liste
+
+void InsertAtHead(int x) {
+    struct Node* newNode = GetNewNode(x);
+    if(head == NULL) {
+        head = newNode;
+        return;
+    }
+    head->prev = newNode;
+    newNode->next = head;
+    head = newNode;
+}
+
+// Dodavanje elementa na kraju liste
+
+void InsertAtTail(int x) {
+    struct Node* temp = head;
+    struct Node* newNode = GetNewNode(x);
+    if(head == NULL) {
+        head = newNode;
+        return;
+    }
+    while(temp->next != NULL){
+        temp = temp->next;
+    }
+    // Go To last Node
+    temp->next = newNode;
+    newNode->prev = temp;
+}
+
+// Prikaz elemenata
+
+// Standardno
+
+void Print() {
+    struct Node* temp = head;
+    printf("Forward:");
+    while(temp != NULL) {
+        printf("%d ",temp->data);
+        temp = temp->next;
+        }
+    printf("\n");
+}
+
+// Inverzno
+
+void ReversePrint() {
+    struct Node* temp = head;
+    if(temp == NULL){
+        return;
+    }
+    while(temp->next != NULL) {
+        temp = temp->next; 
+    }
+    printf("Reverse: ");
+    while(temp != NULL) {
+    printf("%d ",temp->data);
+    temp = temp->prev;
+    }
+    printf("\n");
 }
