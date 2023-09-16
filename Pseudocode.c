@@ -57,3 +57,45 @@ void insert_before(NODE *pom,int elem){
 }
 
 // Brisanje nakon zadatog elementa
+
+void delete_after(NODE *pom){
+    temp=pom->next;
+    pom->next=temp->next;
+    temp->next=NULL;
+    free(temp);
+}
+
+// Brisanje zadatog čvora
+
+void delete_actual(NODE *pom){
+    if ((pom==first)&(first==last)){
+        first=last=NULL;
+        free(pom);
+    }
+    temp=pom->next;
+    pom->next=temp->next;
+    pom->data=temp->data;
+    free(temp);
+}
+
+// Brisanje elementa na zadatoj poziciji vrednosti
+
+void delete_on_position(int pos){
+    int count = 1;
+    NODE *p,*q;
+    p=first;
+    q=NULL;
+    if (pos==1)
+    {
+        first=p->next;
+        free(p);
+        return;
+    }
+    while (pos!=count)
+    {
+        q=p;
+        p=p->next;
+        count++;
+    }
+    delete_after(q);
+}
