@@ -185,6 +185,7 @@ NODE *concat(NODE *list1,NODE *list2){
 }
 
 // Dvostruko povezana lista
+
 //       Struktura elementa
 
 struct Node {

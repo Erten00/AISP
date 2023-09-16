@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+//Implementacija preko niza
+
 //Ispitivanje da li je stek pun
 
 #define SIZE 5 /* Size of Stack */
@@ -87,7 +89,9 @@ main(){ /* Main Program */
     }
 }
 
+//
 // Implementacija preko lančane liste
+//
 
 typedef struct node{
     int data;
