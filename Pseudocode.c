@@ -264,7 +264,6 @@ void ReversePrint() {
     temp = temp->prev;
     }
     printf("\n");
-
 }
 
 // Kružno povezana lista
