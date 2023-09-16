@@ -27,7 +27,7 @@ void crate(int elem){
     }
     else{
         last->next=temp
-        last=temp;
+        last = temp;
     }
 }
 
@@ -42,3 +42,18 @@ void insert_after(NODE *pom,int elem){
         last=temp;
     } 
 }
+
+//Dodavanje elementa pre zadatog elementa
+
+void insert_before(NODE *pom,int elem){
+    temp=(struct node*)malloc(sizeof(struct node));
+    temp->next = pom->next;
+    temp->data = pom->data;
+    pom->data = elem;
+    pom->next = temp;
+    if (pom==last){
+        temp=last;
+    }
+}
+
+// Brisanje nakon zadatog elementa
