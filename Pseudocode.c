@@ -10,9 +10,9 @@ typedef struct node{
 NODE *first=NULL,*last=NULL,*temp=NULL;
 
 int isEmpty(){
-    if(first==NULL)
-    return 1;
-
+    if(first==NULL){
+        return 1;
+    }
     else{
         return 0;
     } 
