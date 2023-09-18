@@ -1,4 +1,3 @@
-// C program to demonstrate insert operation in binary search tree
 #include<stdio.h>
 #include<stdlib.h>
   
@@ -46,23 +45,19 @@ struct node* insert(struct node* node, int key)
  
 struct node* search(struct node* root, int key)
 {
-    // Base Cases: root is null or key is present at root
     if (root == NULL || root->key == key)
        return root;
     
-    // Key is greater than root's key
     if (root->key < key)
        return search(root->right, key);
  
-    // Key is smaller than root's key
     return search(root->left, key);
 }
 
 struct node * minValueNode(struct node* node)
 {
     struct node* current = node;
- 
-    /* loop down to find the leftmost leaf */
+
     while (current->left != NULL)
         current = current->left;
  
