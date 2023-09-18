@@ -1,32 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define maximum number of vertices in the graph
+// Definirajte maksimalan broj vrhova u grafu
 #define N 6
 
 // Data structure to store graph
 struct Graph {
-	// An array of pointers to Node to represent adjacency list
+	// Niz pokazivača na čvor za predstavljanje popisa susjedstva
 	struct Node* head[N];
 };
 
-// A data structure to store adjacency list nodes of the graph
+// Struktura podataka za pohranjivanje čvorova popisa susjedstva grafa
 struct Node {
 	int dest;
 	struct Node* next;
 };
 
-// data structure to store graph edges
+// Struktura podataka za čuvanje ivica grafa
 struct Edge {
 	int src, dest;
 };
 
-// Function to create an adjacency list from specified edges
+// Funkcija za kreiranje liste susednosti od navedenih krajeva
 struct Graph* createGraph(struct Edge edges[], int n)
 {
 	unsigned i;
 
-	// allocate memory for graph data structure
+	// alociranje memorije za strukturu podataka grafa
 	struct Graph* graph = (struct Graph*)malloc(sizeof(struct Graph));
 
 	// initialize head pointer for all vertices

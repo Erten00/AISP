@@ -28,7 +28,7 @@ struct DataItem *search(int key) {
       if(hashArray[hashIndex]->key == key)
          return hashArray[hashIndex]; 
 			
-      //go to next cell
+      // ide na sledecu granu
       ++hashIndex;
 		
       //wrap around the table
@@ -76,7 +76,7 @@ struct DataItem* delete(struct DataItem* item) {
          return temp;
       }
 		
-      //go to next cell
+      // ide na sledecu granu
       ++hashIndex;
 		
       //wrap around the table
