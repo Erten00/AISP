@@ -29,7 +29,7 @@ void crate(int elem){
         last=temp;
     }
     else{
-        last->next=temp
+        last->next=temp;
         last = temp;
     }
 }
