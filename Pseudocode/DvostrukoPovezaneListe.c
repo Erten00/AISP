@@ -1,6 +1,6 @@
 // Dvostruko povezana lista
 
-//       Struktura elementa
+// Struktura elementa
 
 struct Node {
     int data;
@@ -23,7 +23,7 @@ struct Node* GetNewNode(int x) {
 
 void InsertAtHead(int x) {
     struct Node* newNode = GetNewNode(x);
-    if(head == NULL) {
+    if(head == NULL){
         head = newNode;
         return;
     }
@@ -37,7 +37,7 @@ void InsertAtHead(int x) {
 void InsertAtTail(int x) {
     struct Node* temp = head;
     struct Node* newNode = GetNewNode(x);
-    if(head == NULL) {
+    if(head == NULL){
         head = newNode;
         return;
     }
@@ -49,7 +49,7 @@ void InsertAtTail(int x) {
     newNode->prev = temp;
 }
 
-// Prikaz elemenata
+// Prikaz elemenata //
 
 // Standardno
 
