@@ -8,25 +8,27 @@
 
 int s[SIZE],top=-1; /* Global declarations */
 
-int Sfull(){ /* Function toCheck Stack Full */
+/* Function toCheck Stack Full */
+
+int Sfull(){
     if(top == SIZE-1){
         return 1;
     }
 return 0;
 }
 
-// Ispitivanje da li je stek prazan
+/* Function to Check Stack Empty */
 
-int Sempty(){ /* Function to Check Stack Empty */
+int Sempty(){
     if(top == -1){
         return 1;
     }
 return 0;
 }
 
-// Push
+/* Function for PUSH operation */
 
-void push(int elem){ /* Function for PUSH operation */
+void push(int elem){ 
     if( Sfull()) {
         printf("\n\nOverflow!!!!\n\n");
     }
@@ -36,9 +38,9 @@ void push(int elem){ /* Function for PUSH operation */
     }
 }
 
-// Pop
+/* Function for POP operation */
 
-int pop(){ /* Function for POP operation */
+int pop(){
     int elem;
     if(Sempty()){
         printf("\n\nUnderflow!!!!\n\n");
@@ -51,9 +53,9 @@ int pop(){ /* Function for POP operation */
     }
 }
 
-// Prikazivanje (štampanje) elemenata
+/* Function to display status of Stack */
 
-display(){ /* Function to display status of Stack */
+display(){
     int i;
     if(Sempty()){
         printf(" \nEmpty Stack\n");
@@ -66,9 +68,9 @@ display(){ /* Function to display status of Stack */
     }
 }
 
-// Main funkcija
+/* Main Program */
 
-main(){ /* Main Program */
+main(){
     int opn,elem;
     do{
         clrscr();
@@ -76,7 +78,7 @@ main(){ /* Main Program */
         printf("\n Press 1-Push, 2-Pop,3-Display,4-Exit\n");
         printf("\n Your option ? ");
         scanf("%d",&opn);
-    }
+    };
     switch(opn){
         case 1: printf("\n\nRead the element to be pushed ?");
             scanf("%d",&elem);
