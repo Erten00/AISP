@@ -3,7 +3,6 @@
 
 //Implementacija preko niza
 
-//Ispitivanje da li je stek pun
 
 #define SIZE 5 /* Size of Stack */
 

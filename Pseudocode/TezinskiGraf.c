@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Define maximum number of vertices in the graph
-#define N 6
+
+#define N 6 /* Size of Graph */
 
 // Data structure to store graph
 struct Graph {
