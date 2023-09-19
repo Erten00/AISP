@@ -25,7 +25,7 @@ struct node* newNode(int data){ // Alociranje memorije za novi čvor
     return(node);
 }
 
-// Obilasci
+// Obilasci //
 
 // Inorder
 

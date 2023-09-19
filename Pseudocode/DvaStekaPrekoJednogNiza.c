@@ -107,7 +107,7 @@ main(){
                 push(elem); 
                 break;
             case 2:
-                elem=pop();
+                elem=pop(elem);
                 if( elem != -1){
                     printf("\n\nPopped Element is %d \n",elem);
                     break;

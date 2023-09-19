@@ -111,7 +111,7 @@ void delete_by_value(int value){
     q=NULL;
     while(p!=NULL){
         if(value==p->data){
-            brake;
+            break;
         }
         else{
             q=p;
@@ -138,13 +138,13 @@ void delete_by_value(int value){
 
 void display(){
     temp=first;
-    prinf("First->")
+    prinf("First->");
     while (temp!=NULL){
         //printf("%d %d" --> ",temp->data,temp->next");
         printf("%d", temp->data);
         temp=temp->next;
     }
-    printf("NULL")
+    printf("NULL");
 }
 
 // Invertovanje liste
@@ -152,7 +152,7 @@ void display(){
 NODE *invertuj(NODE *first){
     NODE *p,*q,*r;
     p=first;
-    q-NULL;
+    q=NULL;
     while (p!=NULL){
      r=q;
      q=p;
@@ -178,7 +178,7 @@ NODE *concat(NODE *list1,NODE *list2){
     p=list1;
     while (p->next!=NULL)
     {
-        p=p->next
+        p=p->next;
     }
     p->next=list2;
     return list1;

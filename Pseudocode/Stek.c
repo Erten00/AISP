@@ -72,13 +72,11 @@ display(){
 
 main(){
     int opn,elem;
-    do{
-        clrscr();
-        printf("\n ### Stack Operations ### \n\n");
-        printf("\n Press 1-Push, 2-Pop,3-Display,4-Exit\n");
-        printf("\n Your option ? ");
-        scanf("%d",&opn);
-    };
+    clrscr();
+    printf("\n ### Stack Operations ### \n\n");
+    printf("\n Press 1-Push, 2-Pop,3-Display,4-Exit\n");
+    printf("\n Your option ? ");
+    scanf("%d",&opn);
     switch(opn){
         case 1: printf("\n\nRead the element to be pushed ?");
             scanf("%d",&elem);
