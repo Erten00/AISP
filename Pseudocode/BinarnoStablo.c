@@ -4,7 +4,7 @@
 struct bin_tree
 {
     int data;
-    struct bin_tree * right * left;
+    struct bin_tree * right, * left;
 };
 typedef struct bin_tree node;
 
@@ -18,7 +18,7 @@ struct node{
 // Kreiranje novog čvora
 
 struct node* newNode(int data){ // Alociranje memorije za novi čvor
-    struct node* node = (structnode*)malloc(sizeof(struct node)); // Dodavanje data dela tom novomčvoru
+    struct node* node = (struct node*)malloc(sizeof(struct node)); // Dodavanje data dela tom novomčvoru
     node->data = data; // incijalizacija desnog i levog potomka na NULL
     node->left = NULL;
     node->right = NULL;

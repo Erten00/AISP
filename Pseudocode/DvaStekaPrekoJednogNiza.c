@@ -6,16 +6,18 @@
 
 int s[SIZE],top[3]={0,-1,SIZE};
 
-int Sfull(){ /*Function to Check Stack Full */
+/*Function to Check Stack Full */
+
+int Sfull(){
     if(top[1] == top[2]-1){
         return 1;
     }
     return 0;
 }
 
-// StackEmpty
+/* Function to Check Stack Empty */
 
-int Sempty(stno){ /* Function to Check Stack Empty */
+int Sempty(stno){
     switch(stno){
         case 1: 
             if(top[1] == -1){
@@ -34,7 +36,7 @@ int Sempty(stno){ /* Function to Check Stack Empty */
         }
 }
 
-// Push
+/* Function for PUSH operation */
 
 push(int elem,int stno){
     int pos;
@@ -52,7 +54,7 @@ push(int elem,int stno){
     }
 }
 
-// Pop
+/* Function for POP operation */
 
 int pop(int stno){ 
     int elem,pos;
@@ -73,9 +75,9 @@ int pop(int stno){
     }
 }
 
-// Display
+/* Function to display status of Stack */
 
-display(){                  /* Function to display status of Stack */
+display(){
     int i;
     if(Sempty()){
         printf(" \n Empty Stack\n");
