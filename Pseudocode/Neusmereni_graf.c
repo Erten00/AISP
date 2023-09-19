@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Definirajte maksimalan broj vrhova u grafu
-#define N 6
+
+#define N 6 /* Size of Stack */
 
 // Data structure to store graph
 struct Graph {

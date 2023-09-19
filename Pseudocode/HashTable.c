@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#define SIZE 20
+#define SIZE 20 /* Size of Stack */
 
 struct DataItem {
    int data;   

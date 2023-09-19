@@ -1,8 +1,7 @@
 // Implementacija kružnog reda preko niza
 
-// Ispitivanje da li je red pun
 
-#define SIZE 5
+#define SIZE 5 /* Size of Stack */
 
 int CQ[SIZE],f=-1,r=-1;
 
