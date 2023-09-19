@@ -13,7 +13,7 @@ NODE *front=NULL,*rear=NULL,*temp;
 
 void create(){ 
     NODE *newnode;
-    newnode=(node*)malloc(sizeof(node));
+    newnode = (NODE *)malloc(sizeof(NODE));
     printf("\nEnter the node value : ");
     scanf("%d",&newnode->info); newnode->next=NULL;
     if(rear==NULL){

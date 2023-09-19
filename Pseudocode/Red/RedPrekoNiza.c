@@ -5,16 +5,18 @@
 
 int CQ[SIZE],f=-1,r=-1;
 
-int CQfull(){ /* Function to Check Circular Queue Full , proverava se pre povećanja r*/
+/* Function to Check Circular Queue Full , proverava se pre povećanja r*/
+
+int CQfull(){ 
     if( (f==r+1) || (f == 0 && r==SIZE-1)){
         return 1;
     }
     return 0;
 }
 
-// Ispitivanje da li je red prazan
+/* Function to Check Circular Queue Empty */
 
-int CQempty(){ /* Function to Check Circular Queue Empty */
+int CQempty(){
     if(f== -1){
         return 1;
     }
@@ -56,9 +58,9 @@ int CQdelete(){
     }
 }
 
-// Prikazivanje (štampanje) elemenata
+/* Function to display status of Circular Queue */
 
-void display(){ /* Function to display status of Circular Queue */
+void display(){
     int i;
     if(CQempty()){
         printf(" \n Empty Queue\n");
